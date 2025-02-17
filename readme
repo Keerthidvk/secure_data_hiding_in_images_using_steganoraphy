@@ -21,22 +21,21 @@ Secure_Data_Hiding_In_Images_Using_Steganography
 │── 🖼 Image.jpg               # Original image (used for encoding)
 │── 🖼 encryptedImage.jpg      # Encrypted image (generated)
 │── 📄 README.md               # Documentation
-```
+
 
  Installation & Setup
  1️⃣ Prerequisites
 - Install Python (>=3.7)
 - Install OpenCV using pip:
-  ```sh
+  sh
   pip install opencv-python
-  ```
-
+  
  2️⃣ Running the Script
-1. Place the image you want to use as a carrier (`Image.jpg`) in the project folder.
+1. Place the image you want to use as a carrier ('Image.jpg') in the project folder.
 2. Open a terminal and run:
-   ```sh
+   sh
    python secure_data_hiding.py
-   ```
+   
 3. Enter the secret message and passkey when prompted.
 4. The script will generate `encryptedImage.jpg` with the hidden message.
 5. Run the script again and enter the correct passkey to decrypt the message.
@@ -53,21 +52,20 @@ Decoding:
 
 Example Usage
 Encryption:
-```
+
 Secret Code To Unlock: hello123
 Enter The Passkey: secret12
-The message is now hidden inside encryptedImage.jpg.
-```
+The message is now hidden inside encryptedImage.jpg
 
 Decryption:
-```
+
 Enter passcode for Decryption: secret12
 Decrypted message: hello123
 Message successfully retrieved!
-```
+
 
  ⚠ Limitations
-- Works best with "uncompressed image formats" (e.g., `.png`, `.bmp`).
+- Works best with "uncompressed image formats" (e.g., .png, .bmp).
 - "JPEG compression" may alter pixel values and affect decryption.
 - Message length is "limited by the image size".
 
